@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Tag
+from .models import Tag, Document
 
 
 class TagTestCase(TestCase):
@@ -15,3 +15,7 @@ class TagTestCase(TestCase):
     def test_tag_is_not_exists(self):
         with self.assertRaises(Tag.DoesNotExist):
             Tag.objects.get(name='123')
+
+
+class HomepageTestCase(TestCase):
+
