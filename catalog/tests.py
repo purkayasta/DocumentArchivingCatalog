@@ -1,8 +1,10 @@
-from django.test import TestCase
+from django.test import TestCase, Client
+from django.urls import reverse
+
 from .models import Tag, Document
 
 
-class TagTestCase(TestCase):
+class TagModelTestCase(TestCase):
     def setUp(self):
         Tag.objects.create(name="lion")
         Tag.objects.create(name="cat")
@@ -17,5 +19,9 @@ class TagTestCase(TestCase):
             Tag.objects.get(name='123')
 
 
-class HomepageTestCase(TestCase):
+class HomepageUrlTestCase(TestCase):
+    client = Client()
 
+    def test_index_page_load(self):
+        response = client.get(reverse('homepage'))
+        self.assertEqual(response.status_code, 200)
