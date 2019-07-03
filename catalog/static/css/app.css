@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
 
 
-h2 {
-    font-family: 'Vollkorn', serif;
+h3 {
+    font-family: 'Vollkorn', serif;    
+}
+
+#left {
+    float: left;
+    width: 95%;
+    margin: auto;
+}
+
+#right {
+    margin-left: 15%;
+    display: block;
 }
 
 a {
