@@ -5,11 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+pep8 = "*"
+autopep8 = "*"
 
 [packages]
 django = "*"
 django-extensions = "*"
 ipython = "*"
+pylint-django = "*"
 
 [requires]
 python_version = "3.6"

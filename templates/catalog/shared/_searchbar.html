@@ -1,0 +1,20 @@
+<div>
+    <form method="post" class="form">
+        {% csrf_token %}
+
+        {{form.search_content}} &nbsp;
+        <input type="submit" class="btn btn-success" value="Search"> <br />
+        {% for radio in form.selected_radio %}
+        {{radio}}
+        {% endfor %}
+
+
+        <!-- Manual Stuff -->
+
+        <!-- <input class="form-control" type="text" id="search_bar" placeholder="Search..." required>&nbsp;&nbsp;&nbsp;
+        <button type="submit" class="btn btn-success">Search</button><br />
+        <input type="radio" name="doc_type" id="all" value="0" checked> All
+        <input type="radio" name="doc_type" id="name" value="1"> Name
+        <input type="radio" name="doc_type" id="keyword" value="2"> Keyword -->
+    </form>
+</div>

@@ -1,3 +1,8 @@
 {
-    "python.pythonPath": "/home/sunny/.local/share/virtualenvs/doccata-vsh82wl_/bin/python"
+    "python.pythonPath": "/home/eliot/.local/share/virtualenvs/doccata-ZYHZKDt7/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pep8Enabled": true,
+    "python.linting.pylintPath": "/home/sunny/.local/share/virtualenvs/doccata-vsh82wl_/bin/pylint",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_django"],
+    "python.linting.pylintEnabled": false
 }

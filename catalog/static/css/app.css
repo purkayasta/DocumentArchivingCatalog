@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
+
+h3 {
+    font-family: 'Vollkorn', serif;    
+}
+
+#left {
+    float: left;
+    width: 95%;
+    margin: auto;
+}
+
+#right {
+    margin-left: 15%;
+    display: block;
+}
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover {
+     color:#00A0C6; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+#search_bar {
+    width: 80%;
+    float: left;
+}
