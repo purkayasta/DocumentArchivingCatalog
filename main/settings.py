@@ -133,3 +133,7 @@ STATIC_URL = '/static/'
 
 
 AUTH_USER_MODEL = 'catalog.Author'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/document/'

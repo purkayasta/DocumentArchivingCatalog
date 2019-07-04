@@ -9,6 +9,26 @@
     {% include 'catalog/shared/_searchbar.html' %}
 
     <!-- Load Search Results -->
+    <table class="table table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Document</th>
+                <th>Size</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for doc in documents %}
+            <tr>
+                <td>{{ doc.name }}</td>
+                <td>{{ doc.file_content }}</td>
+                <td>{{ doc.file_content.size }}</td>
+                <td><a href="{{ doc.file_content.url }}" target="_blank">Download</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
 
 {% endblock %}
