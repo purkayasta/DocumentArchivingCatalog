@@ -23,8 +23,6 @@ You can use virtualenv or any wrapper for create Virtual Environment. I have use
 ## Run the app by writting this commad.
     $ python manage.py runserver
 
-## Heroku Deployment (*Coming*)
-
 
 # Some screenshot are given below
 
