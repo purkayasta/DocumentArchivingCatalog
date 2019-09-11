@@ -5,7 +5,7 @@ Document Archiving system is made for archive simple document.
 ## Installation
 
 Installing the latest stable version is simple. But make sure first you have python install on your system.
-You can use virtualenv or any wrapper for create Virtual Environment. I have used *pipenv*
+You can use virtualenv or any wrapper to create Virtual Environment. I have used *pipenv*.
 
    `$ pip install pipenv`
    
